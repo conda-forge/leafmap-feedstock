@@ -10,7 +10,7 @@ source:
   sha256: 38ba80f8a11166f28c9303ad01a6b720f2bc7798196b9fc914b0b8b8fb93cf8b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,7 +26,7 @@ requirements:
     - googledrivedownloader
     - ipyevents
     - ipyleaflet
-    - matplotlib
+    - matplotlib-base
     - numpy
     - pandas
     - pycrs
