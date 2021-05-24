@@ -1,38 +1,50 @@
-{% set name = "leafmap" %}
-{% set version = "0.0.1" %}
+{% set name = leafmap %}
+{% set version = 0.0.2 %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 96bc273f42e60286f4bf28864515049182af00c3c62bcad034f5ea61548c5bb5
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 38ba80f8a11166f28c9303ad01a6b720f2bc7798196b9fc914b0b8b8fb93cf8b
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python >=3.6
   run:
-    - ipyleaflet
-    - ipywidgets
     - python >=3.6
+    - bqplot
+    - colour
+    - folium>=0.12.0
+    - googledrivedownloader
+    - ipyevents
+    - ipyleaflet
+    - matplotlib
+    - numpy
+    - pandas
+    - pycrs
+    - pyshp>=2.1.3
+    - python-box
+    - python-mss
+    - whiteboxgui
 test:
   imports:
     - leafmap
 
 about:
-  home: "https://github.com/giswqs/leafmap"
+  home: https://github.com/giswqs/leafmap
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A Python package for interactive mapping with ipyleaflet and ipywidgets"
-  doc_url: https://leafmap.gishub.org/
+  summary: A Python package for geospatial analysis and interactive mapping with minimal coding
+  doc_url: https://leafmap.gishub.org
   dev_url: https://github.com/giswqs/leafmap
 
 extra:
