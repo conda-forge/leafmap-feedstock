@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/leafmap-feedstock/blob/master/LICENSE.txt)
 
-Summary: A Python package for interactive mapping with ipyleaflet and ipywidgets
+Summary: A Python package for geospatial analysis and interactive mapping in a Jupyter environment
 
 Development: https://github.com/giswqs/leafmap
 
