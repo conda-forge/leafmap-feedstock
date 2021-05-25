@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.0.2" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 38ba80f8a11166f28c9303ad01a6b720f2bc7798196b9fc914b0b8b8fb93cf8b
+  sha256: 07b9add0d9e9f8f7e78d6103aa8a52692b61d314af353b90117ba08bdb267cf4
 
 build:
   number: 1
@@ -43,7 +43,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: A Python package for interactive mapping with ipyleaflet and ipywidgets
+  summary: A Python package for geospatial analysis and interactive mapping in a Jupyter environment
   doc_url: https://leafmap.gishub.org/
   dev_url: https://github.com/giswqs/leafmap
 
