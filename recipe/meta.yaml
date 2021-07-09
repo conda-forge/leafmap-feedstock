@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 740e8f68a615b1e2629d9e30b2e3671ef1f2c80f8c5b25ddd3ca475021fe9a89
+  sha256: 08065b63a9419f67ca214ebb28009b9ce7a182d9551bbc1f3ffe69023cce7797
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - bqplot
     - colour
     - folium >=0.12.0
+    - geojson
     - googledrivedownloader
     - here-map-widget-for-jupyter >=1.1.1
     - ipyevents
