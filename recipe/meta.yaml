@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 16f9e41c43b1d371b1111f86b622e1f48f63f31406ccbef5fefe841609ba9f4f
+  sha256: ba6e2f77716ea5ff125060a78f537f238617769e27b7b662fbf3f04190ce80e3
 
 build:
   number: 0
@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
+    - python >=3.7
     - bqplot
     - colour
     - folium >=0.12.0
@@ -36,6 +36,7 @@ requirements:
     - python-box
     - python-mss
     - whiteboxgui
+    - xyzservices
 test:
   imports:
     - leafmap
@@ -46,7 +47,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: A Python package for geospatial analysis and interactive mapping in a Jupyter environment
-  doc_url: https://leafmap.gishub.org/
+  doc_url: https://leafmap.org
   dev_url: https://github.com/giswqs/leafmap
 
 extra:
