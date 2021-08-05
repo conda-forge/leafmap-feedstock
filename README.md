@@ -11,7 +11,7 @@ Summary: A Python package for geospatial analysis and interactive mapping in a J
 
 Development: https://github.com/giswqs/leafmap
 
-Documentation: https://leafmap.gishub.org/
+Documentation: https://leafmap.org
 
 Current build status
 ====================
