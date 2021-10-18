@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e6d31ff28826410a7456cc3b0433077b738853e761fbadc895f035a106c2004d
+  sha256: acc0c10a1ea6b82cba56100af06d1552d4ccbeb46bb6af87bd9e08a2e09f49da
 
 build:
   number: 0
@@ -32,6 +32,7 @@ requirements:
     - jupyterlab >=3.0.0
     - matplotlib-base
     - numpy
+    - owslib
     - pandas
     - pycrs
     - pyshp >=2.1.3
