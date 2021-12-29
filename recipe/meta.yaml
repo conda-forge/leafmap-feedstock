@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 333783653ff4ee0157e69a6b2e7ed16456b51fdaf49a9f0068b82eabee88a2c5
+  sha256: 227871e069f556126c0d85097c6b2b1dab7475c9f088d2142c7c623616373c0d
 
 build:
   number: 0
@@ -35,6 +35,7 @@ requirements:
     - owslib
     - palettable
     - pandas
+    - plotly
     - pycrs
     - pyshp >=2.1.3
     - python-box
