@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 04ce6d89745f1dded07bebd77502521b53799c36203b31e32463e6ae80119543
+  sha256: fb31d6e097cd30a1e1bdb54549b68f538054afb738e1eafe589a51f9b71af376
 
 build:
   number: 0
@@ -38,6 +38,7 @@ requirements:
     - plotly
     - pycrs
     - pyshp >=2.1.3
+    - pystac-client
     - python-box
     - python-mss
     - whiteboxgui >=0.6.0
