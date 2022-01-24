@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 025db4539c55ffcfb57fae00501c5938938a175e276bbf9870e328ce2e1d5a1d
+  sha256: 4f09cf8516330740eb00778184753d1f038c5bb50904bc1e58a69444dfee6816
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - ipyevents
     - ipyfilechooser >=0.6.0
     - ipyleaflet
+    - ipysheet
     - jupyterlab >=3.0.0
     - matplotlib-base
     - numpy
