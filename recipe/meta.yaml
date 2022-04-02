@@ -10,7 +10,7 @@ source:
   sha256: 20261fce72efce736bebdff809fe5767a34c8b36818f25753f9e5b48828d6871
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,13 +25,11 @@ requirements:
     - folium >=0.11.0
     - gdown
     - geojson
-    - geopandas
     - ipyevents
     - ipyfilechooser >=0.6.0
     - ipyleaflet
     - ipysheet
     - jupyterlab >=3.0.0
-    - localtileserver
     - matplotlib-base
     - numpy
     - pandas
