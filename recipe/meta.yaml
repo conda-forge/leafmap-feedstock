@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.8.6" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0049a1571c0ddcb27811738c981bf189639d207cd2b8e798a4fa3b939e75b59d
+  sha256: 10f41aeeb1a4e3b4944b9a9da5b6e7e93dddbeb868aedf675de6454417e934f7
 
 build:
   number: 0
@@ -25,29 +25,30 @@ requirements:
     - folium >=0.11.0
     - gdown
     - geojson
-    - googledrivedownloader
-    - here-map-widget-for-jupyter >=1.1.1
+    - geopandas
     - ipyevents
     - ipyfilechooser >=0.6.0
     - ipyleaflet
     - ipysheet
     - jupyterlab >=3.0.0
+    - localtileserver
     - matplotlib-base
     - numpy
-    - owslib
-    - palettable
     - pandas
-    - plotly
     - pycrs
     - pyshp >=2.1.3
     - pystac-client
     - python-box
-    - python-mss
     - whiteboxgui >=0.6.0
     - xyzservices
+    
 test:
   imports:
     - leafmap
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/giswqs/leafmap
