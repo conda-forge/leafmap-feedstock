@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.9.3" %}
+{% set version = "0.9.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b4f80aa48411cef4f8ce99105692817daa52ca60a60fee3a978e67da091cab4b
+  sha256: d3c2044075d01a7214dbd517087e0fb00549f49dd220814ec34fcb5239bc2d5e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -40,7 +40,7 @@ requirements:
     - python-box
     - whiteboxgui >=0.6.0
     - xyzservices
-    
+
 test:
   imports:
     - leafmap
