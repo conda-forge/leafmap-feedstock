@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d3c2044075d01a7214dbd517087e0fb00549f49dd220814ec34fcb5239bc2d5e
+  sha256: 3db81800be7485e2b23308f948613948bfb6a49dbd4447d6534e4371561df065
 
 build:
   number: 0
@@ -27,10 +27,9 @@ requirements:
     - geojson
     - ipyevents
     - ipyfilechooser >=0.6.0
-    - ipyleaflet
+    - ipyleaflet >=0.14.0
     - ipysheet
     - jupyterlab >=3.0.0
-    - mapclassify >=2.4.0
     - matplotlib-base
     - numpy
     - pandas
