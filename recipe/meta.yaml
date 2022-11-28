@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.13.3" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a3ff8fb26bb3cfa1d253336608b4a64f1cff95d8716f5675ddce9d2d2f812896
+  sha256: 014ccfd5937c7d745d9c3d52906a9a5f909311fa59454406ade32cb43c4a6a73
 
 build:
   number: 0
