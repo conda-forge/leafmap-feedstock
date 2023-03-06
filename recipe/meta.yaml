@@ -22,7 +22,7 @@ requirements:
     - python >=3.7
     - bqplot
     - colour
-    - folium >=0.11.0
+    - folium >=0.11.0,<=0.13.0
     - gdown
     - geojson
     - ipyevents
