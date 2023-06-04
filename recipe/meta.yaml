@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.21.1" %}
+{% set version = "0.21.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f6ffb9df62bc608891def856c6935390b03cded400e965692ab3f3ad6f1ed89e
+  sha256: b0727b376e6ce9b840314f0119cf09053254b8976adc8b9dca2a878dd74f5092
 
 build:
   number: 0
@@ -35,7 +35,7 @@ requirements:
     - numpy
     - pandas
     - pycrs
-    - pyshp 
+    - pyshp
     - pystac-client
     - python-box
     - scooby
