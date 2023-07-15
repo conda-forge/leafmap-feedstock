@@ -30,7 +30,7 @@ requirements:
     - ipyleaflet
     - ipywidgets
     - ipysheet
-    - jupyterlab >=3.0.0
+    - jupyterlab <4.0
     - matplotlib-base
     - numpy
     - pandas
