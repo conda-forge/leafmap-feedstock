@@ -34,6 +34,7 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
+    - plotly
     - pycrs
     - pyshp
     - pystac-client
