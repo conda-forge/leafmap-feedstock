@@ -13,6 +13,8 @@ Development: https://github.com/giswqs/leafmap
 
 Documentation: https://leafmap.org
 
+A Python package for geospatial analysis and interactive mapping in a Jupyter environment
+
 Current build status
 ====================
 
