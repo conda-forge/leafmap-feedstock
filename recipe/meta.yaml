@@ -10,7 +10,7 @@ source:
   sha256: 2e540c5d2fc38f4486d753e4597adeff981202a0df066ed97f955220b6be4cb0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -30,7 +30,7 @@ requirements:
     - ipyleaflet
     - ipywidgets
     - ipysheet
-    - jupyterlab <4.0
+    - jupyterlab
     - matplotlib-base
     - numpy
     - pandas
