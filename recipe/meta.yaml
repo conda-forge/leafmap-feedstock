@@ -33,7 +33,7 @@ requirements:
     - ipysheet
     - jupyterlab
     - matplotlib-base
-    - numpy
+    - numpy <2.0.0
     - pandas
     - plotly
     - pycrs
