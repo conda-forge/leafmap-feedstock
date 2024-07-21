@@ -17,9 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.9
   run:
-    - python >=3.7
+    - python >=3.9
+    - anywidget
     - bqplot
     - colour
     - folium
@@ -33,7 +34,7 @@ requirements:
     - ipysheet
     - jupyterlab
     - matplotlib-base
-    - numpy <3.0.0
+    - numpy <2.0.0
     - pandas
     - plotly
     - pycrs
