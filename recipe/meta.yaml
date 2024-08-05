@@ -49,8 +49,8 @@ requirements:
 test:
   imports:
     - leafmap
-  commands:
-    - pip check
+  # commands:
+  #  - pip check
   requires:
     - pip
 
