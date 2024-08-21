@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.36.6" %}
+{% set version = "0.36.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f029f40e36a17bd2e248269ee6ae941f751f71659533a1c17318d2f5c1fbda6
+  sha256: 8f8f4806c26c092985c1405644e0ecd46f00119c46a1e5dad9e928cff52ecc96
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - folium
     - gdown
     - geojson
+    - geopandas
     - ipyevents
     - ipyfilechooser
     - ipyleaflet
@@ -33,10 +34,12 @@ requirements:
     - ipywidgets
     - ipysheet
     - jupyterlab
+    - maplibre
     - matplotlib-base
     - numpy <2.0.0
     - pandas
     - plotly
+    - pyarrow
     - pycrs
     - pyshp
     - pystac-client
