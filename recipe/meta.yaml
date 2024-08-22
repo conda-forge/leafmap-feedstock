@@ -10,7 +10,7 @@ source:
   sha256: 92bd79698c6da42f6d4b679605dd40174c2d68b9e5ca7da52d55d4f20831d290
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -39,6 +39,7 @@ requirements:
     - numpy <2.0.0
     - pandas
     - plotly
+    - pmtiles
     - pyarrow
     - pycrs
     - pyshp
