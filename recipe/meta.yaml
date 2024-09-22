@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.37.6" %}
+{% set version = "0.38.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f5bc49664874d6543420bc21f8745d267ffc6845995d2add0c065f22cf6dfcde
+  sha256: 7b9015b5ba34f1fba6dce0b16195d421b4b31c4f987801d86847fdd64eec6e81
 
 build:
   number: 0
@@ -35,7 +35,7 @@ requirements:
     - ipywidgets
     - ipysheet
     - jupyterlab
-    - maplibre
+    # - maplibre
     - matplotlib-base
     - numpy
     - pandas
