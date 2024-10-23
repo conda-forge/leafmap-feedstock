@@ -3,13 +3,13 @@ About leafmap-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/leafmap-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/giswqs/leafmap
+Home: https://github.com/opengeos/leafmap
 
 Package license: MIT
 
 Summary: A Python package for geospatial analysis and interactive mapping in a Jupyter environment
 
-Development: https://github.com/giswqs/leafmap
+Development: https://github.com/opengeos/leafmap
 
 Documentation: https://leafmap.org
 
