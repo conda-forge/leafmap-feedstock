@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.38.7" %}
+{% set version = "0.38.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d39af4ca104b1f46589f6b6ba1d14dee225da6c6fda73a0a4604035b5d6bc00d
+  sha256: 023e0a848f0f7a8481c58c3fcd83d35fee8f148deb8e9bda104ca19f43ae4f5d
 
 build:
   number: 0
@@ -60,14 +60,14 @@ test:
     - pip
 
 about:
-  home: https://github.com/giswqs/leafmap
+  home: https://github.com/opengeos/leafmap
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: A Python package for geospatial analysis and interactive mapping in a Jupyter environment
   description: A Python package for geospatial analysis and interactive mapping in a Jupyter environment
   doc_url: https://leafmap.org
-  dev_url: https://github.com/giswqs/leafmap
+  dev_url: https://github.com/opengeos/leafmap
 
 extra:
   recipe-maintainers:
