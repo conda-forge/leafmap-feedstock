@@ -11,7 +11,7 @@ source:
   sha256: 29014eeb9810767dae238c058394799037c07434f44943bdd183fd394e72896e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -29,6 +29,8 @@ requirements:
     - gdown
     - geojson
     - geopandas
+    - h5netcdf
+    - h5py
     - ipyevents
     - ipyfilechooser
     - ipyleaflet
@@ -36,9 +38,11 @@ requirements:
     - ipywidgets
     - ipysheet
     - jupyterlab
-    # - maplibre
+    - localtileserver
+    - maplibre
     - matplotlib-base
     - numpy
+    - opera-utils
     - pandas
     - plotly
     - pmtiles
@@ -47,6 +51,7 @@ requirements:
     - pyshp
     - pystac-client
     - python-box
+    - rioxarray
     - scooby
     - whiteboxgui
     - xyzservices
