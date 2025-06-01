@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.47.0" %}
+{% set version = "0.47.1" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3aa9bad3934eaada4797b570125ae57bda315b5fa3082a9dd06be973bc04e001
+  sha256: 78ef9420755b6318a358239e076bb48b8877721d1ec8df1fe00aeb3bad86f6d7
 
 build:
   number: 0
@@ -24,7 +24,6 @@ requirements:
     - python >={{ python_min }}
     - anywidget
     - bqplot
-    - colour
     - folium
     - gdown
     - geojson
