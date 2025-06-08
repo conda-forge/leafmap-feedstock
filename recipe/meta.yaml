@@ -1,5 +1,5 @@
 {% set name = "leafmap" %}
-{% set version = "0.47.2" %}
+{% set version = "0.48.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d1e2342cec7c22312d0dd063c3cc877c4e8b89037ac715d75ddbdc0493a71b7a
+  sha256: fd1236326a6dbb97fcfe8e74c89dbd606fee348bbd36429d1c34c376cc04cc86
 
 build:
   number: 0
@@ -47,7 +47,6 @@ requirements:
     - pmtiles
     - pyarrow
     - pycrs
-    - pyshp
     - pystac-client
     - python-box
     - rioxarray
