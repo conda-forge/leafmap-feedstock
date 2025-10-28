@@ -1,6 +1,6 @@
 {% set name = "leafmap" %}
-{% set version = "0.54.0" %}
-{% set python_min = "3.9" %}
+{% set version = "0.55.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a3cfb2b0a22755a4a612e6aff058190b441d9567a58d3b2f14e85e57bacc4e8
+  sha256: cad0ec4301e7f27b193161d11ee91aea714f2159d29d699e66345cfc2d4481b7
 
 build:
   number: 0
@@ -53,7 +53,7 @@ requirements:
     - scooby
     - whiteboxgui
     - xyzservices
-    - python-duckdb
+    - python-duckdb >=1.4.1
 
 test:
   imports:
