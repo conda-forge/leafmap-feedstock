@@ -53,7 +53,7 @@ requirements:
     - scooby
     - whiteboxgui
     - xyzservices
-    - python-duckdb
+    - python-duckdb >=1.4.1
 
 test:
   imports:
